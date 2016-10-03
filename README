@@ -1,0 +1,5 @@
+If when trying to load a Pokemon's individual profile you find that you must wait for longer than 30 seconds, try either going back
+to the Pokemon List and reselecting the Pokemon, or alternatively, restart the app (Sometimes the Volley Request just takes too long and
+ignores the time-out and retries).
+
+Best to use this on a phone/emulator with a decently sized screen!
