@@ -19,7 +19,6 @@ public class PokemonList extends AppCompatActivity {
     private LinearLayoutManager mLinearLayoutManager;
     private RecyclerView mRecyclerView;
     private RecyclerAdapter mAdapter;
-    private int testToSee;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
