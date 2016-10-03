@@ -26,7 +26,6 @@ public class Pokemon implements Serializable {
     private Bitmap bigImage;
     private double height;
     private double weight;
-    private String genderRatio;
 
     public ArrayList<Evolution> getEvolutions() {
         return evolutions;
@@ -52,31 +51,12 @@ public class Pokemon implements Serializable {
         this.weight = weight;
     }
 
-    public String getGenderRatio() {
-        return genderRatio;
-    }
-
-    public void setGenderRatio(String genderRatio) {
-        this.genderRatio = genderRatio;
-    }
 
     public Pokemon() {
 
     }
 
-    public Pokemon(String name, int id, ArrayList<String> abilities, ArrayList<Evolution> evolution, ArrayList<String> types) {
-        this.name = name;
-        this.id = id;
-        this.abilities = abilities;
-        this.evolutions = evolution;
-        this.types = types;
-    }
 
-    public Pokemon(String name, int id, Bitmap sprite) {
-        this.name = name;
-        this.id = id;
-        this.sprite = sprite;
-    }
 
     public String getJSONObject() {
         return JSONObject;

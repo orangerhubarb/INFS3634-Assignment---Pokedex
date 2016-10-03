@@ -41,10 +41,8 @@ public class Moves implements Comparable<Moves> {
     public int compareTo(Moves compareMoves) {
         int compareLevel=(compareMoves).getLevelLearnt();
 
-        /* For Ascending order*/
         return this.levelLearnt-compareLevel;
 
-        /* For Descending order do like this */
-        //return compareage-this.studentage;
+
     }
 }

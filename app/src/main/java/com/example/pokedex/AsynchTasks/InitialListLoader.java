@@ -48,7 +48,7 @@ public class InitialListLoader extends AsyncTask<Void, Void, ArrayList<Pokemon>>
     private Context mContext;
     InitialListLoaderCallback mCallback = null;
     private Activity myActivity;
-    private ProgressBar progressBar;
+
 
     public void setmListener(InitialListLoaderCallback callback) {
         mCallback = callback;
@@ -67,8 +67,7 @@ public class InitialListLoader extends AsyncTask<Void, Void, ArrayList<Pokemon>>
         requestQueue = Volley.newRequestQueue(mContext);
 
         JsonObjectRequest listObject = new JsonObjectRequest(Request.Method.GET, apiURL,
-                // The third parameter Listener overrides the method onResponse() and passes
-                //JSONObject as a parameter
+
                 new Response.Listener<JSONObject>() {
 
                     // Takes the response from the JSON request
@@ -113,8 +112,7 @@ public class InitialListLoader extends AsyncTask<Void, Void, ArrayList<Pokemon>>
 
                     }
                 },
-                // The final parameter overrides the method onErrorResponse() and passes VolleyError
-                //as a parameter
+
                 new Response.ErrorListener() {
                     @Override
                     // Handles errors that occur due to Volley
@@ -125,7 +123,7 @@ public class InitialListLoader extends AsyncTask<Void, Void, ArrayList<Pokemon>>
                 }
 
         );
-        int socketTimeout = 60000;//30 seconds - change to what you want
+        int socketTimeout = 60000;
         RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
         listObject.setRetryPolicy(policy);
 

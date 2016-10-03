@@ -69,7 +69,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Pokemo
             Context context = itemView.getContext();
             Intent showPokemon = new Intent(context, PokemonActivity.class);
             showPokemon.putExtra(POKEMON_KEY, pokemon.getId());
-            //Might actually have to change this to activate the download of the rest of the info, or do it in the new activity??
+
             context.startActivity(showPokemon);
         }
     }

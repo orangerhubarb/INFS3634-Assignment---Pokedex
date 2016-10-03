@@ -20,30 +20,6 @@ public class Stats {
         this.hp = hp;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
-    public void setSpdef(int spdef) {
-        this.spdef = spdef;
-    }
-
-    public void setSpatk(int spatk) {
-        this.spatk = spatk;
-    }
-
-    public void setDef(int def) {
-        this.def = def;
-    }
-
-    public void setAtt(int att) {
-        this.att = att;
-    }
-
-    public void setHp(int hp) {
-        this.hp = hp;
-    }
-
     public int getSpeed() {
 
         return speed;

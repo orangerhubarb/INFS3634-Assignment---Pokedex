@@ -47,22 +47,6 @@ public class PokemonContract {
 
     }
 
-    public long insertWhole(Pokemon pokemon, String JSONObject) {
-        Log.d("Debug", "Attempting to getWritable");
-        SQLiteDatabase db  = dbHelper.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-
-        values.put(PokemonEntry.COLUMN_NAME, pokemon.getName());
-        values.put(PokemonEntry.COLUMN_ID, pokemon.getId());
-        values.put(PokemonEntry.COLUMN_JSONOBJECT, JSONObject);
-
-        long newRowId;
-        newRowId = db.insert(TABLE_NAME, null, values);
-        db.close();
-        return newRowId;
-    }
-
     public long insertNew(Pokemon pokemon) {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
@@ -180,13 +164,13 @@ public class PokemonContract {
         };
 
         Cursor cur = db.query(
-                TABLE_NAME,  // The table to query
-                columns,                               // The columns to return
-                selection,                                // The columns for the WHERE clause
-                selectionArgs,                            // The values for the WHERE clause
-                null,                                     // don't group the rows
-                null,                                     // don't filter by row groups
-                null                                 // The sort order
+                TABLE_NAME,
+                columns,
+                selection,
+                selectionArgs,
+                null,
+                null,
+                null
         );
 
         Pokemon pokemon = null;
@@ -213,7 +197,6 @@ public class PokemonContract {
         cur.close();
         db.close();
         return pokemon;
-
 
 
     }
