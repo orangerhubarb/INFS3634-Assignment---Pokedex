@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30dp"
+    tools:context="com.example.pokedex.View.PokemonActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wholeLinearLayout"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/big_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/pokemon_name_full"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="CURRENTLY DOWNLOADING DATA" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/typesLayout">
+
+            <TextView
+                android:id="@+id/type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/flavour_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/basicprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/basic_profile"
+            android:textSize="18sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:gravity="left"
+                    android:text="@string/height"
+                    android:textSize="17sp"
+                    android:layout_width="70dp"/>
+
+                <TextView
+                    android:id="@+id/heightText"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:textSize="17sp"
+                    android:layout_weight="1.5"/>
+
+                <TextView
+                    android:text="@string/weight"
+                    android:textSize="17sp"
+                    android:layout_weight="0.5"/>
+
+                <TextView
+                    android:id="@+id/weightText"
+                    android:textSize="17sp"
+                    android:layout_weight="1.5"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:gravity="left"
+                    android:text="@string/abilities"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:id="@+id/abilitiesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.2"
+                    android:gravity="left"
+                    android:textSize="17sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/sprite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/sprite"
+            android:paddingBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/pokemon_sprite"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/baseStats"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/base_stats" />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:text="@string/hp"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/hpText"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="9dp"
+                    android:textSize="17sp" />
+
+                <ProgressBar
+                    android:id="@+id/hpValueBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:max="250"
+                    android:progress="0"
+                    android:progressTint="#79c4cc"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:text="@string/attack"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/atkText"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="9dp"
+                    android:textSize="17sp" />
+
+                <ProgressBar
+                    android:id="@+id/atkValueBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:max="250"
+                    android:progress="0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:text="@string/defence"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/defText"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="9dp"
+                    android:textSize="17sp" />
+
+                <ProgressBar
+                    android:id="@+id/defValueBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:max="250"
+                    android:progress="0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:text="@string/spatk"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/spAtkText"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="9dp"
+                    android:textSize="17sp" />
+
+                <ProgressBar
+                    android:id="@+id/spAtkValueBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:max="250"
+                    android:progress="0"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:text="@string/spdef"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/spDefText"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="9dp"
+                    android:textSize="17sp" />
+
+                <ProgressBar
+                    android:id="@+id/spDefValueBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:max="250"
+                    android:progress="0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:text="@string/speed"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/speedText"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="9dp"
+                    android:textSize="17sp" />
+
+                <ProgressBar
+                    android:id="@+id/speedValueBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:max="250"
+                    android:progress="0" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+        <TextView
+            android:id="@+id/evolutionsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/evolutions" />
+
+        <TableLayout
+            android:id="@+id/evolutionsTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:stretchColumns="*">
+
+            <TableRow android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:text="@string/evolveName"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:text="@string/evolveMethod"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:text="@string/evolveLevel"
+                    android:textSize="17sp" />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noEvolutions"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/learnedMovesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/moves" />
+
+        <TableLayout
+            android:id="@+id/movesTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:stretchColumns="*">
+
+            <TableRow android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:text="@string/moveName"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/levelLearned"
+                    android:textSize="17sp" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+

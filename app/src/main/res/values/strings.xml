@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="base_stats"><u>BASE STATS</u></string>
+    <string name="basic_profile"><u>BASIC PROFILE</u></string>
+    <string name="height"><b>Height</b></string>
+    <string name="weight"><b>Weight</b></string>
+    <string name="abilities"><b>Abilities</b></string>
+    <string name="sprite"><u>SPRITE</u></string>
+
+    <string name="hp"><b>HP</b></string>
+    <string name="attack"><b>Attack</b></string>
+    <string name="defence"><b>Defence</b></string>
+    <string name="spatk"><b>Sp. Atk</b></string>
+    <string name="spdef"><b>Sp. Def</b></string>
+    <string name="speed"><b>Speed</b></string>
+
+    <string name="evolutions"><u>EVOLUTIONS</u></string>
+    <string name="evolveName"><b>Evolves to</b></string>
+    <string name="evolveMethod"><b>Evolution Method</b></string>
+    <string name="evolveLevel"><b>Level evolved</b></string>
+
+    <string name="moves"><u>LEARNED MOVES</u></string>
+    <string name="moveName"><b>Move Name</b></string>
+    <string name="levelLearned"><b>Level Learned</b></string>
+
+    <string name="Normal"><![CDATA[<b><font color=#FFFFFF>Normal</b>]]></string>
+    <string name="Fire"><![CDATA[<b><font color=#FFFFFF>Fire</b>]]></string>
+    <string name="Water"><![CDATA[<b><font color=#FFFFFF>Water</b>]]></string>
+    <string name="Electric"><![CDATA[<b><font color=#FFFFFF>Electric</b>]]></string>
+    <string name="Grass"><![CDATA[<b><font color=#FFFFFF>Grass</b>]]></string>
+    <string name="Ice"><![CDATA[<b><font color=#FFFFFF>Ice</b>]]></string>
+    <string name="Fighting"><![CDATA[<b><font color=#FFFFFF>Fighting</b>]]></string>
+    <string name="Poison"><![CDATA[<b><font color=#FFFFFF>Poison</b>]]></string>
+    <string name="Ground"><![CDATA[<b><font color=#FFFFFF>Ground</b>]]></string>
+    <string name="Flying"><![CDATA[<b><font color=#FFFFFF>Flying</b>]]></string>
+    <string name="Psychic"><![CDATA[<b><font color=#FFFFFF>Psychic</b>]]></string>
+    <string name="Bug"><![CDATA[<b><font color=#FFFFFF>Bug</b>]]></string>
+    <string name="Rock"><![CDATA[<b><font color=#FFFFFF>Rock</b>]]></string>
+    <string name="Ghost"><![CDATA[<b><font color=#FFFFFF>Ghost</b>]]></string>
+    <string name="Dragon"><![CDATA[<b><font color=#FFFFFF>Dragon</b>]]></string>
+    <string name="Dark"><![CDATA[<b><font color=#FFFFFF>Dark</b>]]></string>
+    <string name="Steel"><![CDATA[<b><font color=#FFFFFF>Steel</b>]]></string>
+    <string name="Fairy"><![CDATA[<b><font color=#FFFFFF>Fairy</b>]]></string>
+
+</resources>
