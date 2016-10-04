@@ -9,7 +9,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -42,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements InitialListLoader
         loadingText = (TextView) findViewById(R.id.loadingText);
         mainTitle = (TextView) findViewById(R.id.mainTitle);
 
+
+
         tf1 = Typeface.createFromAsset(this.getAssets(), "Sansation_Bold.ttf");
         loadingText.setTypeface(tf1);
 
@@ -49,10 +54,9 @@ public class MainActivity extends AppCompatActivity implements InitialListLoader
         mainTitle.setTypeface(tf2);
 
 
-
         if (!doesDBExist()) {
             Log.d("Debug", "Database doesn't exist");
-            progressBar.setMax(151);
+            progressBar.setMax(649);
             InitialListLoader initialListLoader = new InitialListLoader(this, this);
             initialListLoader.setmListener(this);
             initialListLoader.execute();

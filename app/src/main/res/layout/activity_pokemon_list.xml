@@ -9,8 +9,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchPokemon"
+        android:hint="Search for Pokemon here"
+        android:textSize="17sp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        />
+
     <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="20dp"
         android:id="@+id/recyclerView"
+        android:layout_below="@id/searchPokemon"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical" />

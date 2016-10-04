@@ -14,13 +14,12 @@
         android:id="@+id/wholeLinearLayout"
         android:orientation="vertical">
 
-
-        <ImageView
-            android:id="@+id/big_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/big_image"/>
 
         <TextView
             android:id="@+id/pokemon_name_full"
