@@ -21,10 +21,11 @@
         android:textSize="17sp"
         android:paddingLeft="18dp"
         android:paddingRight="18dp"
+        android:backgroundTint="@color/colorPrimary"
         />
 
     <android.support.v7.widget.RecyclerView
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:id="@+id/recyclerView"
         android:layout_below="@id/searchPokemon"
         android:layout_width="match_parent"
