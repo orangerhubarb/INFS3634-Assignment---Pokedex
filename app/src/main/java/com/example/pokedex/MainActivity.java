@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements InitialListLoader
 
         if (!doesDBExist()) {
             Log.d("Debug", "Database doesn't exist");
-            progressBar.setMax(649);
+            progressBar.setMax(151);
             InitialListLoader initialListLoader = new InitialListLoader(this, this);
             initialListLoader.setmListener(this);
             initialListLoader.execute();
