@@ -16,8 +16,8 @@
 
     <string name="evolutions"><u>EVOLUTIONS</u></string>
     <string name="evolveName"><b>Evolves to</b></string>
-    <string name="evolveMethod"><b>Evolution Method</b></string>
-    <string name="evolveLevel"><b>Level evolved</b></string>
+    <string name="evolveMethod"><b>Method</b></string>
+    <string name="evolveLevel"><b>Lvl evolved</b></string>
 
     <string name="moves"><u>LEARNED MOVES</u></string>
     <string name="moveName"><b>Move Name</b></string>

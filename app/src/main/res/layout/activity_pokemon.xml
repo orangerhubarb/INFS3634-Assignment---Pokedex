@@ -58,7 +58,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="12dp"
-            android:textSize="17sp" />
+            android:textSize="17dp" />
 
         <TextView
             android:id="@+id/basicprofile"
@@ -67,7 +67,7 @@
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="@string/basic_profile"
-            android:textSize="18sp" />
+            android:textSize="18dp" />
 
         <TableLayout
             android:layout_width="match_parent"
@@ -84,24 +84,24 @@
                 <TextView
                     android:gravity="left"
                     android:text="@string/height"
-                    android:textSize="17sp"
+                    android:textSize="17dp"
                     android:layout_width="70dp"/>
 
                 <TextView
                     android:id="@+id/heightText"
                     android:gravity="left"
                     android:paddingLeft="0dp"
-                    android:textSize="17sp"
+                    android:textSize="17dp"
                     android:layout_weight="1.5"/>
 
                 <TextView
                     android:text="@string/weight"
-                    android:textSize="17sp"
+                    android:textSize="17dp"
                     android:layout_weight="0.5"/>
 
                 <TextView
                     android:id="@+id/weightText"
-                    android:textSize="17sp"
+                    android:textSize="17dp"
                     android:layout_weight="1.5"/>
 
             </TableRow>
@@ -124,7 +124,7 @@
                     android:layout_width="70dp"
                     android:gravity="left"
                     android:text="@string/abilities"
-                    android:textSize="17sp"
+                    android:textSize="17dp"
                     />
 
                 <TextView
@@ -133,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3.2"
                     android:gravity="left"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -182,14 +182,14 @@
                     android:layout_weight="0.4"
                     android:gravity="right"
                     android:text="@string/hp"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <TextView
                     android:id="@+id/hpText"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
                     android:paddingLeft="9dp"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <ProgressBar
                     android:id="@+id/hpValueBar"
@@ -215,14 +215,14 @@
                     android:layout_weight="0.4"
                     android:gravity="right"
                     android:text="@string/attack"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <TextView
                     android:id="@+id/atkText"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
                     android:paddingLeft="9dp"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <ProgressBar
                     android:id="@+id/atkValueBar"
@@ -247,14 +247,14 @@
                     android:layout_weight="0.4"
                     android:gravity="right"
                     android:text="@string/defence"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <TextView
                     android:id="@+id/defText"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
                     android:paddingLeft="9dp"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <ProgressBar
                     android:id="@+id/defValueBar"
@@ -279,14 +279,14 @@
                     android:layout_weight="0.4"
                     android:gravity="right"
                     android:text="@string/spatk"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <TextView
                     android:id="@+id/spAtkText"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
                     android:paddingLeft="9dp"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <ProgressBar
                     android:id="@+id/spAtkValueBar"
@@ -312,14 +312,14 @@
                     android:layout_weight="0.4"
                     android:gravity="right"
                     android:text="@string/spdef"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <TextView
                     android:id="@+id/spDefText"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
                     android:paddingLeft="9dp"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <ProgressBar
                     android:id="@+id/spDefValueBar"
@@ -344,14 +344,14 @@
                     android:layout_weight="0.4"
                     android:gravity="right"
                     android:text="@string/speed"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <TextView
                     android:id="@+id/speedText"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
                     android:paddingLeft="9dp"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <ProgressBar
                     android:id="@+id/speedValueBar"
@@ -388,15 +388,15 @@
 
                 <TextView
                     android:text="@string/evolveName"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <TextView
                     android:text="@string/evolveMethod"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <TextView
                     android:text="@string/evolveLevel"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
             </TableRow>
         </TableLayout>
         <TextView
@@ -405,7 +405,7 @@
             android:id="@+id/noEvolutions"
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
+            android:textSize="16dp"
             />
 
         <TextView
@@ -428,12 +428,12 @@
 
                 <TextView
                     android:text="@string/moveName"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
                 <TextView
                     android:gravity="center"
                     android:text="@string/levelLearned"
-                    android:textSize="17sp" />
+                    android:textSize="17dp" />
 
 
             </TableRow>
